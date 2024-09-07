@@ -8,5 +8,7 @@ Esse projeto é so para mostrar algumas informações sobre o ciclismo.
 
 !!! barra de pesquisar funciona apenas com os atletas que coloquei na lista, fixei a lista no menu para fornecer o nome de alguns atletas.
 
+!!! Utilizei varias abas de html para separação das páginas. usei css para da aparência a página é a parte de dados e javascrip ficou apenas a basica que aprendi na propria aula.
+espero que gostem do meu primeiro projeto.
 tela 21.45 Polegadas
 	
