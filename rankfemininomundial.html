@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclismo</title>
+    <style>
+        body {
+            background-image: url('https://cdn.mos.cms.futurecdn.net/iNTabywzAXR3C4wLK8fYmR.jpg');
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d5b183f51b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menudecima">
+            <li class="dropdown">
+
+                <a class="iconemenu"><i class="fa-solid fa-bars"></i> </a>
+                <span>
+                    <a class="iddParalimpiada">CiclismoBR</a>
+                </span>
+               
+                <ul class="dropdown-content">
+                  <li><a href="index.html" target="_parent">Página principal</a></li>
+                  <li><a href="listadeatletas.html" target="_parent">Lista de altetas</a></li>
+                  <li><a href="suporte.html"> Suporte</a></li>
+                </ul> 
+            </li>
+         
+            <div class="buscar-box">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="placeholder" type="text" placeholder="Pesquisar"
+                    id="campo-pesquisa">
+                    <button class="butaozim" onclick="pesquisar()">Pesquisar</button>
+                </div>
+
+        </ul>
+    </div>
+    <div id="menu">
+      <ul>
+         
+        <li class="dropdown">
+            <a class="primeiromenutt">Modalidades</a>
+            <ul class="dropdown-content">
+              
+              <li><a href="bmx.html" target="_parent">BMX</a></li>                  
+              <li><a href="triatlo.html" target="_parent">Triatlo</a></li>
+              <li><a href="estrada.html" target="_parent">Ciclismo de estrada</a></li>  
+              <li><a href="mtb.html" target="_parent">Mountain bike</a></li>
+              <li><a href="gravel.html" target="_parent">Gravel</a></li>
+              <li><a href="ciclosturismo.html" target="_parent">Cicloturismo</a></li>
+            </ul>
+          </li>  
+      
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking masculino</a>
+        <ul class="dropdown-content">
+          <li><a href="raankmasculinobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="raankmasculinomundial.html" target="_parent">Ranking mundial</a></li>
+        </ul>
+      </li>  
+
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking feminino</a>
+        <ul class="dropdown-content">
+          <li><a href="rankfemininobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="rankfemininomundial.html" target="_parent">Ranking Mundial</a></li>
+        </ul>
+    </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+<div class="container">
+  <div class="card card-1">
+    <div class="card-header">
+      <img src="data:image/jpeg;base64,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" class="card-img" />
+    </div>
+    <div class="card-body">      
+      <h2 class="card-titulo">Anna van der Breggen</h2>
+      <p class="card-texto">
+        Anna van der Breggen (Zwolle, 18 de abril de 1990) é uma ciclista profissional neerlandesa. Estreia como profissional em 2009 e depois de requalificar-se amador durante 2 anos definitivamente em 2011 consolidou-se no profissionalismo. Apesar disso, anteriormente já tinha disputado corridas importantes como o Giro d'Italia Feminino com a selecção dos Países Baixos mas com discretos resultados. e a Fleche Wallonne três vezes: em 2015, 2016 e 2017. No mesmo ano, ela foi a campeã no Campeonato dos Países Baixos de Ciclismo em Estrada e terminou em primeiro lugar na temporada mundial. Em 2016, ela tornou-se campeã olímpica nos Jogos Olímpicos de Verão de 2016.
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://pt.wikipedia.org/wiki/Anna_van_der_Breggen">Mais informações</a>
+    </div>
+  </div>
+
+
+  <div class="card card-1">
+    <div class="card-header">
+      <img src="https://img.bleacherreport.net/img/images/photos/003/616/243/hi-res-1fe1d14f29c1a1197811abcd5aa42b15_crop_north.jpg?1470432393&w=3072&h=2048" class="card-img" />
+    </div>
+    <div class="card-body">
+        <h2 class="card-titulo">Lizzie Armitstead</h2>
+      <p class="card-texto">
+        É uma desportista britânica que compete no ciclismo na modalidade de estrada, pertencendo à equipa Boels Dolmans desde o ano 2013; ainda que também disputou carreiras de pista, onde foi especialista nas provas de perseguição por equipas, pontuação e scratch. É a campeã mundial de estrada do ano 2015 e campeã mundial em pista do ano 2009 em perseguição por equipas.
+
+        Participou em dois Jogos Olímpicos de Verão, obtendo em Londres 2012 uma medalha de prata na prova de rota feminina e o 10.º lugar na contrarrelógio, e em Rio de Janeiro 2016 o 5.º lugar em estrada.
+
+        Em estrada obteve três medalhas no Campeonato Mundial de Ciclismo em Estrada, nos anos 2015 e 2016.
+     
+    
+     
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://pt.wikipedia.org/wiki/Lizzie_Armitstead">Mais informações</a>
+    </div>
+  </div>  
+
+
+  <div class="card card-1">
+    <div class="card-header">
+      <img src="https://cosxeuwlta.cloudimg.io/_outsports-prodweb_/uploads/2024/08/marianne-vos-scaled-e1722861583588.jpg?auto=format&auto=compress&fit=crop&gravity=50p,0p&w=1200&h=630" class="card-img" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-titulo">Marianne Vos</h2>
+      <p class="card-texto">
+        É uma desportista neerlandesa que compete no ciclismo nas modalidades de estrada, pista (especialista nas provas de pontuação e scratch) e ciclocross. Pelo seu palmarés, bicampeã olímpica (Pequim 2008 e Londres 2012), três vezes campeã mundial em estrada, duas vezes campeã mundial em pista e sete vezes campeã mundial em ciclocross, é uma das ciclistas femininas mais laureadas da história e a única em coroar-se em três especialidades diferentes.
+        Participou em três Jogos Olímpicos de Verão, entre os anos 2008 e 2016, obtendo ao todo duas medalhas de ouro, a primeira em Pequim 2008, na carreira por pontos (ciclismo em pista), e a segunda em Londres 2012, na prova de rota feminina.
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://pt.wikipedia.org/wiki/Marianne_Vos">Mais informações</a>
+    </div>
+  </div>
+
+        
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    
+    <header>
+        <h1>CICLISMO</h1>
+    </header>
+   <main>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>

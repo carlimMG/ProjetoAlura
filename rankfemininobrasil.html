@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclismo</title>
+    <style>
+        body {
+            background-image: url('https://cdn.mos.cms.futurecdn.net/iNTabywzAXR3C4wLK8fYmR.jpg');
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d5b183f51b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menudecima">
+            <li class="dropdown">
+
+                <a class="iconemenu"><i class="fa-solid fa-bars"></i> </a>
+                <span>
+                    <a class="iddParalimpiada">CiclismoBR</a>
+                </span>
+               
+                <ul class="dropdown-content">
+                  <li><a href="index.html" target="_parent">Página principal</a></li>
+                  <li><a href="listadeatletas.html" target="_parent">Lista de altetas</a></li>
+                  <li><a href="suporte.html"> Suporte</a></li>
+                </ul> 
+            </li>
+         
+            <div class="buscar-box">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="placeholder" type="text" placeholder="Pesquisar"
+                    id="campo-pesquisa">
+                    <button class="butaozim" onclick="pesquisar()">Pesquisar</button>
+                </div>
+
+        </ul>
+    </div>
+    <div id="menu">
+      <ul>
+         
+        <li class="dropdown">
+            <a class="primeiromenutt">Modalidades</a>
+            <ul class="dropdown-content">
+              
+              <li><a href="bmx.html" target="_parent">BMX</a></li>                  
+              <li><a href="triatlo.html" target="_parent">Triatlo</a></li>
+              <li><a href="estrada.html" target="_parent">Ciclismo de estrada</a></li>  
+              <li><a href="mtb.html" target="_parent">Mountain bike</a></li>
+              <li><a href="gravel.html" target="_parent">Gravel</a></li>
+              <li><a href="ciclosturismo.html" target="_parent">Cicloturismo</a></li>
+            </ul>
+          </li>  
+      
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking masculino</a>
+        <ul class="dropdown-content">
+          <li><a href="raankmasculinobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="raankmasculinomundial.html" target="_parent">Ranking mundial</a></li>
+        </ul>
+      </li>  
+
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking feminino</a>
+        <ul class="dropdown-content">
+          <li><a href="rankfemininobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="rankfemininomundial.html" target="_parent">Ranking Mundial</a></li>
+        </ul>
+    </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+<div class="container">
+  <div class="card card-1">
+    <div class="card-header">
+      <img src="https://aratuon.com.br/wp-content/uploads/2023/10/paola-reis.jpg" class="card-img" />
+    </div>
+    <div class="card-body">      
+      <h2 class="card-titulo">Paôla Reis</h2>
+      <p class="card-texto">
+        A ciclista começou a praticar BMX aos 11 anos, através do Projeto Pedal, que é executado pela Associação de Bicicross de Salvador (ABS), em parceria com Governo do Estado, por meio da Superintendência dos Desportos do Estado da Bahia (Sudesb), autarquia da Secretaria do Trabalho, Emprego e Esporte (Setre), em Stella Maris. Nos primeiros anos, disputou torneios nacionais com o apoio da ABS mais doações de amigos e comerciantes do bairro. No entanto, desde os 16 anos, há oito anos atrás, Paola conta com o apoio da Sudesb que custeia as passagens para disputar competições fora do estado e já recebeu bolsa do programa FazAtleta e Bolsa Esporte.
+       
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://olympics.com/pt/noticias/paola-reis-unica-representante-brasil-bmx-racing-paris-2024">Mais informações</a>
+    </div>
+  </div>
+
+
+<div class="card card-1">
+    <div class="card-header">
+      <img src="data:image/jpeg;base64,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" />
+    </div>
+    <div class="card-body">
+        <h2 class="card-titulo">Ana Vitória Magalhães</h2>
+      <p class="card-texto">
+        É uma ciclista brasileira de estrada e pista , que atualmente compete pela equipe continental feminina da UCI Bepink–Bongioanni. Ela foi selecionada para competir na corrida de estrada feminina nas Olimpíadas de Verão de 2024. Ela também competiu no Giro d'Italia Feminino em 2023 e 2024 e é duas vezes campeã nacional de nível elite, com um título cada na corrida de estrada e no contra-relógio.
+        <br>
+        <br>
+        3.º no Campeonato do Brasil Contrarrelógio <br>
+        Campeonato do Brasil em Estrada 
+        <br>
+        <br>
+        <br>
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://en.wikipedia.org/wiki/Ana_Vit%C3%B3ria_Magalh%C3%A3es">Mais informações</a>
+    </div>
+</div>  
+
+
+  <div class="card card-1">
+    <div class="card-header">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSerJZ5yLdidJ0-_zvYNdBGqp3fJpFjDfdai66Zv9FerAKlzbP9" class="card-img" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-titulo">Raiza Goulão</h2>
+      <p class="card-texto">
+        Raiza Goulão Henrique (Pirenópolis, 28 de fevereiro de 1991) é uma ciclista olímpica brasileira especializada no mountain bike. Representou o Brasil nos Jogos Olímpicos de Verão de 2016 no cross-country feminino do ciclismo, e nos Jogos Olímpicos de Verão de 2024 em Paris.
+
+        Raiza se tornou bicampeã pan-americana sub-23 ao vencer as edições de Pueblo em 2012 e Tucumán em 2013. No adulto, conquistou a medalha de prata nos Jogos Sul-Americanos de 2014 em Santiago. Representou o Brasil também nos Jogos Pan-Americanos de 2015, evento em que ela terminou em 5.º lugar no cross-country.
+        <br>
+        <br>
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="https://blog.bikeregistrada.com.br/raiza-goulao/">Mais informações</a>
+    </div>
+  </div>
+
+        
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    
+    <header>
+        <h1>CICLISMO</h1>
+    </header>
+   <main>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclismo</title>
+    <style>
+        body {
+            background-image: url('https://semexe.com/blog/wp-content/uploads/2020/02/capa-tt.jpg');
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d5b183f51b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menudecima">
+            <li class="dropdown">
+
+                <a class="iconemenu"><i class="fa-solid fa-bars"></i> </a>
+                <span>
+                    <a class="iddParalimpiada">CiclismoBR</a>
+                </span>
+               
+                <ul class="dropdown-content">
+                  <li><a href="index.html" target="_parent">Página principal</a></li>
+                  <li><a href="listadeatletas.html" target="_parent">Lista de altetas</a></li>
+                  <li><a href="suporte.html"> Suporte</a></li>
+                </ul> 
+            </li>
+         
+            <div class="buscar-box">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="placeholder" type="text" placeholder="Pesquisar"
+                    id="campo-pesquisa">
+                    <button class="butaozim" onclick="pesquisar()">Pesquisar</button>
+                </div>
+
+        </ul>
+    </div>
+    <div id="menu">
+      <ul>
+         
+        <li class="dropdown">
+            <a class="primeiromenutt">Modalidades</a>
+            <ul class="dropdown-content">
+              
+              <li><a href="bmx.html" target="_parent">BMX</a></li>                  
+              <li><a href="triatlo.html" target="_parent">Triatlo</a></li>
+              <li><a href="estrada.html" target="_parent">Ciclismo de estrada</a></li>  
+              <li><a href="mtb.html" target="_parent">Mountain bike</a></li>
+              <li><a href="gravel.html" target="_parent">Gravel</a></li>
+              <li><a href="ciclosturismo.html" target="_parent">Cicloturismo</a></li>
+            </ul>
+          </li>  
+      
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking masculino</a>
+        <ul class="dropdown-content">
+          <li><a href="raankmasculinobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="raankmasculinomundial.html" target="_parent">Ranking mundial</a></li>
+        </ul>
+      </li>  
+
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking feminino</a>
+        <ul class="dropdown-content">
+          <li><a href="rankfemininobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="rankfemininomundial.html" target="_parent">Ranking Mundial</a></li>
+        </ul>
+    </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <div class="container">
+        <div class="card card-1">
+          <div class="card-header">
+            <img src="
+            https://media.trekbikes.com/image/upload/w_1200/16x9_Triathlon_01" class="card-img" />
+          </div>  
+          <div class="card-body">
+            <h2 class="card-titulo">Triatlo</h2>
+            <p id="idcardi">
+                O triatlo é um esporte que combina as modalidades de natação, ciclismo e corrida, que são realizadas sem interrupção e na seguinte ordem: Natação, Ciclismo, Corrida. 
+                Os atletas que competem em triatlo precisam ser versáteis, habilidosos e ter um alto nível de condicionamento físico e resistência, pois as provas podem durar mais de sete horas.
+                <br>
+                Existem diferentes tipos de triatlo, como:
+                <br>
+                <span class="tiposs">
+                Triatlo olímpico: </span> Consiste em uma disputa de 1.500 metros de natação, 40 quilômetros de ciclismo e 10 quilômetros de corrida. 
+                <br>
+                <span class="tiposs">Ironman Triathlon:</span> Modalidade de longa distância que compreende 40 provas de 3,8 quilômetros de natação, 180 quilômetros de ciclismo e 42,195 quilômetros de corrida. 
+                <br>
+                <span class="tiposs">Triatlo de inverno:</span> Consiste de esqui de cross country, ciclismo de montanha e corrida. 
+                <br>    
+                <span class="tiposs">Triatlo de aventura:</span> Consiste de natação, ciclismo de montanha e corrida cross copri. 
+                <br>
+                <span class="tiposs">Triatlo Rápido:</span> Consiste em provas menos longas, totalizando menos de vinte minutos por bateria. 
+                
+            </p>
+          </div>          
+        </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    
+    <header>
+        <h1>CICLISMO</h1>
+    </header>
+   <main>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>

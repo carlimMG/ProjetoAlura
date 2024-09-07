@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ciclismo</title>
+    <style>
+        body {
+            background-image: url('https://wallpapers.com/images/hd/leogang-downhill-4k-mountain-bike-track-luel5gej0olnx6ik.jpg');
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/d5b183f51b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menudecima">
+            <li class="dropdown">
+
+                <a class="iconemenu"><i class="fa-solid fa-bars"></i> </a>
+                <span>
+                    <a class="iddParalimpiada">CiclismoBR</a>
+                </span>
+               
+                <ul class="dropdown-content">
+                  <li><a href="index.html" target="_parent">Página principal</a></li>
+                  <li><a href="listadeatletas.html" target="_parent">Lista de altetas</a></li>
+                  <li><a href="suporte.html"> Suporte</a></li>
+                </ul> 
+            </li>
+         
+            <div class="buscar-box">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="placeholder" type="text" placeholder="Pesquisar"
+                    id="campo-pesquisa">
+                    <button class="butaozim" onclick="pesquisar()">Pesquisar</button>
+                </div>
+
+        </ul>
+    </div>
+    <div id="menu">
+      <ul>
+         
+        <li class="dropdown">
+            <a class="primeiromenutt">Modalidades</a>
+            <ul class="dropdown-content">
+              
+              <li><a href="bmx.html" target="_parent">BMX</a></li>                  
+              <li><a href="triatlo.html" target="_parent">Triatlo</a></li>
+              <li><a href="estrada.html" target="_parent">Ciclismo de estrada</a></li>  
+              <li><a href="mtb.html" target="_parent">Mountain bike</a></li>
+              
+              <li><a href="gravel.html" target="_parent">Gravel</a></li>
+              <li><a href="ciclosturismo.html" target="_parent">Cicloturismo</a></li>
+            </ul>
+          </li>  
+      
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking masculino</a>
+        <ul class="dropdown-content">
+          <li><a href="raankmasculinobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="raankmasculinomundial.html" target="_parent">Ranking mundial</a></li>
+        </ul>
+      </li>  
+
+      <li class="dropdown">
+        <a class="primeiromenutt">Ranking feminino</a>
+        <ul class="dropdown-content">
+          <li><a href="rankfemininobrasil.html" target="_parent">Ranking Brasileiro</a></li>
+          <li><a href="rankfemininomundial.html" target="_parent">Ranking Mundial</a></li>
+        </ul>
+    </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+    <div class="container">
+        <div class="card card-1">
+          <div class="card-header">
+            <img src="
+            https://blog.cycle7.com.br/wp-content/uploads/2021/11/post_thumbnail-7beb79527ea1940c61be14032ba5b67d.jpeg   " class="card-img" />
+          </div>  
+          <div class="card-body">
+            <h2 class="card-titulo">Mountain Bike - MTB</h2>
+            <p id="idcardi">
+                É uma modalidade de ciclismo que consiste em pedalar em terrenos irregulares, como montanhas, trilhas, estradas de terra e acidentadas.
+                As Mountain Bikes são bicicletas resistentes e fáceis de manter, com pneus grandes, quadros baixos e peças muito resistentes.
+                O MTB é um esporte que atrai pessoas que gostam de aventura e contato com a natureza. Existem diversas categorias dentro do MTB, cada uma com suas particularidades.
+            </p>
+          </div>          
+        </div>
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    
+    <header>
+        <h1>CICLISMO</h1>
+    </header>
+   <main>
+        
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+        <script src="dados.js"></script>
+        <script src="app.js"></script>
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+
+</html>
